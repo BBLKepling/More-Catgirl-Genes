@@ -1,0 +1,4 @@
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\More Catgirl Genes\1.5\DBH\Assemblies\More Catgirl Genes.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\More Catgirl Genes\1.5\DBH\Source\More Catgirl Genes\obj\Debug\More Catgirl Genes.csproj.AssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\More Catgirl Genes\1.5\DBH\Source\More Catgirl Genes\obj\Debug\More Catgirl Genes.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\More Catgirl Genes\1.5\DBH\Source\More Catgirl Genes\obj\Debug\More Catgirl Genes.dll

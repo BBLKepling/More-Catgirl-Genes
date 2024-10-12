@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="BaseFilth" MayRequire="Dubwise.DubsBadHygiene">
+    <defName>BBLK_Filth_Hairball</defName>
+    <label>hairball</label>
+    <graphicData>
+      <texPath>Things/Filth/Grainy</texPath>
+      <color>(97,65,48,97)</color>
+    </graphicData>
+    <statBases>
+      <Beauty>-40</Beauty>
+      <Cleanliness>-15</Cleanliness>
+    </statBases>
+    <filth>
+      <ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+      <rainWashes>true</rainWashes>
+      <disappearsInDays>45~50</disappearsInDays>
+      <cleaningWorkToReduceThickness>35</cleaningWorkToReduceThickness>
+      <canFilthAttach>true</canFilthAttach>
+    </filth>
+  </ThingDef>
+
+</Defs>

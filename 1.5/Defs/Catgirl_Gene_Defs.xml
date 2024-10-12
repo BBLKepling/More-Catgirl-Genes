@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+   <GeneDef ParentName="GeneVoiceBase">
+    <defName>BBLK_VoiceCat</defName>
+    <label>cat voice</label>
+    <description>Carriers have an kitty cat voice.</description>
+    <iconPath>Things/Pawn/Animal/Cat/Cat_south</iconPath>
+    <displayOrderInCategory>133</displayOrderInCategory>
+    <soundCall>Pawn_Cat_Call</soundCall>
+    <soundDeath>Pawn_Cat_Death</soundDeath>
+    <soundWounded>Pawn_Cat_Injured</soundWounded>
+    <symbolPack>
+      <wholeNameSymbols>
+        <li><symbol>meower</symbol></li>
+        <li><symbol>hisser</symbol></li>
+      </wholeNameSymbols>
+      <prefixSymbols>
+        <li><symbol>meow</symbol></li>
+        <li><symbol>hiss</symbol></li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li><symbol>meow</symbol></li>
+        <li><symbol>hiss</symbol></li>
+      </suffixSymbols>
+    </symbolPack>
+  </GeneDef>
+
+   <GeneDef>
+    <defName>BBLK_HappyCamper</defName>
+    <label>happy camper</label>
+    <description>Carriers will have no problem sleeping on the ground or outside like their some kind of animal. They will still grab a bed if one is available.</description>
+    <iconPath>Things/Mote/SleepZ</iconPath>
+    <displayCategory>Miscellaneous</displayCategory>
+    <displayOrderInCategory>177</displayOrderInCategory>
+    <biostatCpx>1</biostatCpx>
+  </GeneDef>
+
+   <GeneDef>
+    <defName>BBLK_KibbleEater</defName>
+    <label>kibble eater</label>
+    <description>Carriers will have no problem eating kibble, if they have to. They still prefer human food, and will have no problem telling you they're staving while staring at a pile of kibble. Does nothing about the ingredients of the kibble.</description>
+    <iconPath>Things/Item/Resource/Kibble</iconPath>
+    <displayCategory>Miscellaneous</displayCategory>
+    <displayOrderInCategory>166</displayOrderInCategory>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-1</biostatMet>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>BBLK_Nuzzler</defName>
+    <label>nuzzler</label>
+    <description>Carriers can nuzzle other pawns once a day.</description>
+    <iconPath>Things/Mote/SpeechSymbols/Nuzzle</iconPath>
+    <displayCategory>Ability</displayCategory>
+    <displayOrderInCategory>166</displayOrderInCategory>
+    <abilities>
+      <li>BBLK_Nuzzle</li>
+    </abilities>
+    <descriptionHyperlinks>
+      <AbilityDef>BBLK_Nuzzle</AbilityDef>
+    </descriptionHyperlinks>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-2</biostatMet>
+    <symbolPack>
+      <wholeNameSymbols>
+        <li><symbol>nuzzler</symbol></li>
+      </wholeNameSymbols>
+      <prefixSymbols>
+        <li><symbol>nuzzle</symbol></li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li><symbol>nuzzle</symbol></li>
+      </suffixSymbols>
+    </symbolPack>
+  </GeneDef>
+
+  <AbilityDef ParentName="AbilityTouchBase">
+    <defName>BBLK_Nuzzle</defName>
+    <label>nuzzle</label>
+    <description>Nuzzle up to someone.</description>
+    <iconPath>Things/Mote/SpeechSymbols/Nuzzle</iconPath>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+    <cooldownTicksRange>60000</cooldownTicksRange><!-- 24h -->
+    <hostile>false</hostile>
+    <verbProperties>
+      <verbClass>Verb_CastAbilityTouch</verbClass>
+      <drawAimPie>false</drawAimPie>
+      <range>-1</range>
+      <!--<warmupTime>1</warmupTime>-->
+      <violent>false</violent>
+      <targetParams>
+        <canTargetPawns>true</canTargetPawns>
+        <neverTargetIncapacitated>true</neverTargetIncapacitated>
+        <canTargetAnimals>false</canTargetAnimals>
+        <canTargetSelf>false</canTargetSelf>
+        <canTargetBuildings>false</canTargetBuildings>
+        <canTargetCorpses>false</canTargetCorpses>
+        <canTargetMechs>false</canTargetMechs>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilitySocialInteraction">
+        <interactionDef>Nuzzle</interactionDef>
+      </li>
+    </comps>
+  </AbilityDef>
+
+</Defs>

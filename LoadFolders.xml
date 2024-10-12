@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<loadFolders>
+  <v1.5>
+    <li>/</li>
+    <li>1.5</li>
+    <li IfModActive="Dubwise.DubsBadHygiene">1.5/DBH</li>
+    <li IfModNotActive="bblkepling.hairballmod">1.5/Hairball</li>
+  </v1.5>
+</loadFolders>
