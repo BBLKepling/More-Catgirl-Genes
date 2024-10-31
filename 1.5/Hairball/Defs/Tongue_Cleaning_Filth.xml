@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <ThingDef ParentName="BaseFilth" MayRequire="Dubwise.DubsBadHygiene">
+  <ThingDef ParentName="BaseFilth" MayRequireAnyOf="Dubwise.DubsBadHygiene,Dubwise.DubsBadHygiene.Lite">
     <defName>BBLK_Filth_Hairball</defName>
     <label>hairball</label>
     <graphicData>

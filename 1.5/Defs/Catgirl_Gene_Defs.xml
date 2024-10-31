@@ -34,6 +34,7 @@
     <displayCategory>Miscellaneous</displayCategory>
     <displayOrderInCategory>177</displayOrderInCategory>
     <biostatCpx>1</biostatCpx>
+    <exclusionTags />
   </GeneDef>
 
    <GeneDef>
@@ -45,6 +46,7 @@
     <displayOrderInCategory>166</displayOrderInCategory>
     <biostatCpx>1</biostatCpx>
     <biostatMet>-1</biostatMet>
+    <exclusionTags />
   </GeneDef>
 
   <GeneDef>
@@ -62,6 +64,7 @@
     </descriptionHyperlinks>
     <biostatCpx>1</biostatCpx>
     <biostatMet>-2</biostatMet>
+    <exclusionTags />
     <symbolPack>
       <wholeNameSymbols>
         <li><symbol>nuzzler</symbol></li>

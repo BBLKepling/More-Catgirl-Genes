@@ -3,7 +3,10 @@
   <v1.5>
     <li>/</li>
     <li>1.5</li>
-    <li IfModActive="Dubwise.DubsBadHygiene">1.5/DBH</li>
+    <li IfModActive="Dubwise.DubsBadHygiene,Dubwise.DubsBadHygiene.Lite">1.5/DBH</li>
+    <li IfModActive="Dubwise.DubsBadHygiene">1.5/DBHReg</li>
+    <li IfModActive="Dubwise.DubsBadHygiene.Lite">1.5/DBHLite</li>
+    <li IfModActive="OskarPotocki.VanillaFactionsExpanded.Core">1.5/VEF</li>
     <li IfModNotActive="bblkepling.hairballmod">1.5/Hairball</li>
   </v1.5>
 </loadFolders>

@@ -10,28 +10,31 @@
     <iconPath>DBH/Things/Building/LitterBox</iconPath>
     <displayOrderInCategory>111</displayOrderInCategory>
     <biostatCpx>1</biostatCpx>
+    <exclusionTags />
   </GeneDef>
 
    <GeneDef>
     <defName>BBLK_WildShitter</defName>
     <label>wild shitter</label>
-    <description>Carriers will prefer to shit in nature, and don't care if anyone is around when they do. They will not use a toilet on thier own unless ordered to, so you may want to litter train them... litter training gene sold seperately.</description>
+    <description>Carriers will prefer to shit in nature, and don't care if anyone is around when they do. They will not use a toilet on their own unless ordered to, so you may want to litter train them... litter training gene sold seperately.</description>
     <iconPath>DBH/Things/Mote/FecalBit</iconPath>
     <displayCategory>Miscellaneous</displayCategory>
     <displayOrderInCategory>177</displayOrderInCategory>
     <biostatCpx>1</biostatCpx>
+    <exclusionTags />
   </GeneDef>
 
    <GeneDef>
     <defName>BBLK_Tongue_Cleaning</defName>
     <label>tongue cleaning</label>
-    <description>Carriers can clean themselves with thier tongue, if they have one. It's not very effective, but they can do it anywhere. Also hairballs.</description>
+    <description>Carriers can clean themselves with their tongue, if they have one. It's not very effective, but they can do it anywhere. Also hairballs.</description>
     <displayCategory>Miscellaneous</displayCategory>
     <prerequisite>Furskin</prerequisite>
     <iconPath>UI/Icons/Genes/BBLK_stonesTongue</iconPath>
     <displayOrderInCategory>155</displayOrderInCategory>
     <biostatCpx>1</biostatCpx>
     <biostatMet>0</biostatMet>
+    <exclusionTags />
   </GeneDef>
 
   <JobDef>
