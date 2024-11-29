@@ -4,7 +4,7 @@
   <GeneDef>
     <defName>BBLK_CatMeat</defName>
     <label>cat flesh</label>
-    <description>Carriers of this gene have cat flesh. Consuming cat meat by them is classed as cannibalism.</description>
+    <description>Carriers of this gene have cat flesh.</description>
     <iconPath>Things/Item/Resource/MeatFoodRaw/Meat_Small/Meat_Small_b</iconPath>
     <biostatCpx>2</biostatCpx>
     <biostatMet>0</biostatMet>
@@ -26,7 +26,7 @@
   <GeneDef>
     <defName>BBLK_PantherMeat</defName>
     <label>panther flesh</label>
-    <description>Carriers of this gene have panther flesh. Consuming panther meat by them is classed as cannibalism.</description>
+    <description>Carriers of this gene have panther flesh.</description>
     <iconPath>Things/Item/Resource/MeatFoodRaw/Meat_Big/Meat_Big_b</iconPath>
     <biostatCpx>2</biostatCpx>
     <biostatMet>0</biostatMet>

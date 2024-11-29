@@ -14,7 +14,7 @@ namespace More_Catgirl_Genes
         public static IEnumerable<Toil> Postfix(IEnumerable<Toil> oldToils, JobDriver_Vomit __instance)
         {
             Pawn pawn = __instance.pawn;
-            if (pawn?.health?.hediffSet is null || !pawn.health.hediffSet.TryGetHediff(InternalDefOf.BBLK_Hairball, out Hediff hediff) || hediff.Severity < 0.5 || Rand.Range(1, 101) > hediff.Severity * 100)
+            if (!(pawn?.health?.hediffSet is HediffSet hediffSet) || !hediffSet.TryGetHediff(InternalDefOf.BBLK_Hairball, out Hediff hediff) || hediff.Severity < 0.5 || Rand.Range(1, 101) > hediff.Severity * 100)
             {
                 foreach (Toil toil in oldToils) yield return toil;
                 yield break;

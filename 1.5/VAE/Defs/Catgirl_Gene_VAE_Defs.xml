@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <GeneDef>
+    <defName>BBLK_LionMeat</defName>
+    <label>lion flesh</label>
+    <description>Carriers of this gene have lion flesh.</description>
+    <iconPath>Things/Item/Resource/MeatFoodRaw/Meat_Big/Meat_Big_b</iconPath>
+    <biostatCpx>2</biostatCpx>
+    <biostatMet>0</biostatMet>
+    <selectionWeight>0</selectionWeight>
+    <displayOrderInCategory>111</displayOrderInCategory>
+    <displayCategory>Miscellaneous</displayCategory>
+    <exclusionTags>
+      <li>Flesh</li>
+      <li>Meat</li>
+      <li>AG_Meat</li>
+    </exclusionTags>
+    <modExtensions>
+      <li Class="VanillaGenesExpanded.GeneExtension">
+        <customMeatThingDef>Meat_AEXP_Lion</customMeatThingDef>
+      </li>
+    </modExtensions>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>BBLK_LionLeather</defName>
+    <label>lion leather</label>
+    <description>Carriers of this gene will yield lion leather when butchered.</description>
+    <iconPath>Things/Item/Resource/Leather/Leather_b</iconPath>
+    <iconColor>(185,143,96)</iconColor>
+    <biostatCpx>2</biostatCpx>
+    <biostatMet>0</biostatMet>
+    <selectionWeight>0</selectionWeight>
+    <displayOrderInCategory>133</displayOrderInCategory>
+    <displayCategory>Miscellaneous</displayCategory>
+    <exclusionTags>
+      <li>Leather</li>
+      <li>Leathers</li>
+      <li>AG_Leather</li>
+    </exclusionTags>
+    <modExtensions>
+      <li Class="VanillaGenesExpanded.GeneExtension">
+        <customLeatherThingDef>AEXP_Leather_Lion</customLeatherThingDef>
+      </li>
+    </modExtensions>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>BBLK_TigerMeat</defName>
+    <label>tiger flesh</label>
+    <description>Carriers of this gene have tiger flesh.</description>
+    <iconPath>Things/Item/Resource/MeatFoodRaw/Meat_Big/Meat_Big_b</iconPath>
+    <biostatCpx>2</biostatCpx>
+    <biostatMet>0</biostatMet>
+    <selectionWeight>0</selectionWeight>
+    <displayOrderInCategory>122</displayOrderInCategory>
+    <displayCategory>Miscellaneous</displayCategory>
+    <exclusionTags>
+      <li>Flesh</li>
+      <li>Meat</li>
+      <li>AG_Meat</li>
+    </exclusionTags>
+    <modExtensions>
+      <li Class="VanillaGenesExpanded.GeneExtension">
+        <customMeatThingDef>Meat_AEXP_Tiger</customMeatThingDef>
+      </li>
+    </modExtensions>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>BBLK_TigerLeather</defName>
+    <label>tiger leather</label>
+    <description>Carriers of this gene will yield tiger leather when butchered.</description>
+    <iconPath>Things/Item/Resource/Leather/Leather_b</iconPath>
+    <iconColor>(197,154,99)</iconColor>
+    <biostatCpx>2</biostatCpx>
+    <biostatMet>0</biostatMet>
+    <selectionWeight>0</selectionWeight>
+    <displayOrderInCategory>144</displayOrderInCategory>
+    <displayCategory>Miscellaneous</displayCategory>
+    <exclusionTags>
+      <li>Leather</li>
+      <li>Leathers</li>
+      <li>AG_Leather</li>
+    </exclusionTags>
+    <modExtensions>
+      <li Class="VanillaGenesExpanded.GeneExtension">
+        <customLeatherThingDef>AEXP_Leather_Tiger</customLeatherThingDef>
+      </li>
+    </modExtensions>
+  </GeneDef>
+
+</Defs>

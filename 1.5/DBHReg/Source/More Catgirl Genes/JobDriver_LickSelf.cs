@@ -8,14 +8,13 @@ namespace More_Catgirl_Genes
 {
     public class JobDriver_LickSelf : JobDriver
     {
+        private bool bionicTongue;
         public override bool TryMakePreToilReservations(bool errorOnFailed)
         {
             return true;
         }
         protected override IEnumerable<Toil> MakeNewToils()
         {
-            job.targetA = pawn;
-            bool bionicTongue = pawn.health.hediffSet.HasHediff(InternalDefOf.BionicTongue);
             yield return Toils_GoToLickSpot.GoToLickSpot(pawn);
             Toil toil = new Toil
             {
@@ -28,8 +27,8 @@ namespace More_Catgirl_Genes
             toil.tickAction = delegate
             {
                 pawn.needs.TryGetNeed<Need_Hygiene>().clean(bionicTongue ? 0.002f : 0.001f);
-                    if (ticksLeftThisToil % 3 != 0) return;
-                    pawn.needs.TryGetNeed<Need_Thirst>().Drink(-0.001f);
+                if (ticksLeftThisToil % 3 != 0) return;
+                pawn.needs.TryGetNeed<Need_Thirst>().Drink(-0.001f);
                 if (ticksLeftThisToil % 60 != 0) return;
                 if (Rand.Range(1, 6) == 1)
                 {
@@ -53,6 +52,18 @@ namespace More_Catgirl_Genes
                 SanitationUtil.ContaminationFromCellForPawn(pawn, pawn.CurJob.GetTarget(TargetIndex.A).Cell);
             });
             yield return toil;
+        }
+        public override void Notify_Starting()
+        {
+            base.Notify_Starting();
+            job.count = 1;
+            job.targetA = pawn;
+            bionicTongue = pawn.health.hediffSet.HasHediff(InternalDefOf.BionicTongue);
+        }
+        public override void ExposeData()
+        {
+            base.ExposeData();
+            Scribe_Values.Look(ref bionicTongue, "bionicTongue", defaultValue: false);
         }
     }
 }
