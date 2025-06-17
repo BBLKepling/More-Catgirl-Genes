@@ -24,5 +24,8 @@ namespace More_Catgirl_Genes
 
         [MayRequire("silkcircuit.carryabarfbag")]
         public static ThingDef BarfBag;
+
+        [MayRequire("bblkepling.hairballmod")]
+        public static HediffDef BBLK_CatLax;
     }
 }

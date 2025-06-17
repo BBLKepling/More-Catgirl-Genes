@@ -9,6 +9,7 @@ namespace More_Catgirl_Genes
     public class JobDriver_LickSelf : JobDriver
     {
         private bool bionicTongue;
+        private bool catLax;
         public override bool TryMakePreToilReservations(bool errorOnFailed)
         {
             return true;
@@ -40,9 +41,11 @@ namespace More_Catgirl_Genes
                     if (!(pawn.health?.hediffSet is HediffSet hediffset)) return;
                     if (hediffset.TryGetHediff(InternalDefOf.BBLK_Hairball, out Hediff hediff))
                     {
-                        hediff.Severity += (Rand.Range(1, 4) * .01f);
+                        hediff.Severity += catLax ? (Rand.Range(1, 4) * -.01f) : (Rand.Range(1, 4) * .01f);
+                        if (catLax && hediff.Severity <= .01f) pawn.health.RemoveHediff(hediff);
                         return;
                     }
+                    if (catLax) return;
                     BodyPartRecord stomach = hediffset.GetBodyPartRecord(InternalDefOf.Stomach);
                     if (!hediffset.PartOrAnyAncestorHasDirectlyAddedParts(stomach) && hediffset.PartIsMissing(stomach)) return;
                     pawn.health.AddHediff(InternalDefOf.BBLK_Hairball, stomach);
@@ -63,9 +66,11 @@ namespace More_Catgirl_Genes
                     if (!(pawn.health?.hediffSet is HediffSet hediffset)) return;
                     if (hediffset.TryGetHediff(InternalDefOf.BBLK_Hairball, out Hediff hediff))
                     {
-                        hediff.Severity += (Rand.Range(1, 4) * .01f);
+                        hediff.Severity += catLax ? (Rand.Range(1, 4) * -.01f) : (Rand.Range(1, 4) * .01f);
+                        if (catLax && hediff.Severity <= .01f) pawn.health.RemoveHediff(hediff);
                         return;
                     }
+                    if (catLax) return;
                     BodyPartRecord stomach = hediffset.GetBodyPartRecord(InternalDefOf.Stomach);
                     if (!hediffset.PartOrAnyAncestorHasDirectlyAddedParts(stomach) && hediffset.PartIsMissing(stomach)) return;
                     pawn.health.AddHediff(InternalDefOf.BBLK_Hairball, stomach);
@@ -84,11 +89,13 @@ namespace More_Catgirl_Genes
             job.count = 1;
             job.targetA = pawn;
             bionicTongue = pawn.health.hediffSet.HasHediff(InternalDefOf.BionicTongue);
+            catLax = ModLister.HasActiveModWithName("Kepling's Hairball Mod") && pawn.health.hediffSet.HasHediff(InternalDefOf.BBLK_CatLax);
         }
         public override void ExposeData()
         {
             base.ExposeData();
             Scribe_Values.Look(ref bionicTongue, "bionicTongue", defaultValue: false);
+            Scribe_Values.Look(ref catLax, "catLax", defaultValue: false);
         }
     }
 }
