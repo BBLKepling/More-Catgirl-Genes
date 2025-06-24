@@ -4,6 +4,7 @@
   <author>bblkepling</author>
   <supportedVersions>
     <li>1.5</li>
+    <li>1.6</li>
   </supportedVersions>
   <packageId>bblkepling.morecatgirlgenes</packageId>
   <description>More catgirl genes, because why not. Includes 4 basic xml genes(Cat Voice, Happy Camper, Kibble Eater, and Nuzzler) for vanilla Biotech, and 3 c# genes(Wild Shitter, Litter Trained, and Tongue Cleaning) with Dubs Bad Hygene installed.</description>

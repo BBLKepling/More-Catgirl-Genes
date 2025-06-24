@@ -2,10 +2,20 @@
 <loadFolders>
   <v1.5>
     <li>/</li>
-    <li>1.5</li>
+    <li>Common</li>
     <li IfModActive="Dubwise.DubsBadHygiene,Dubwise.DubsBadHygiene.Lite">1.5/DBH</li>
+    <li IfModActive="Dubwise.DubsBadHygiene,Dubwise.DubsBadHygiene.Lite">Common/DBH</li>
     <li IfModActive="OskarPotocki.VanillaFactionsExpanded.Core">1.5/VEF</li>
     <li IfModActive="VanillaExpanded.VanillaAnimalsExpanded">1.5/VAE</li>
-    <li IfModNotActive="bblkepling.hairballmod">1.5/Hairball</li>
+    <li IfModNotActive="bblkepling.hairballmod">Common/Hairball</li>
   </v1.5>
+  <v1.6>
+    <li>/</li>
+    <li>Common</li>
+    <li IfModActive="Dubwise.DubsBadHygiene,Dubwise.DubsBadHygiene.Lite">1.6/DBH</li>
+    <li IfModActive="Dubwise.DubsBadHygiene,Dubwise.DubsBadHygiene.Lite">Common/DBH</li>
+    <li IfModActive="OskarPotocki.VanillaFactionsExpanded.Core">1.6/VEF</li>
+    <li IfModActive="VanillaExpanded.VanillaAnimalsExpanded">1.6/VAE</li>
+    <li IfModNotActive="bblkepling.hairballmod">Common/Hairball</li>
+  </v1.6>
 </loadFolders>

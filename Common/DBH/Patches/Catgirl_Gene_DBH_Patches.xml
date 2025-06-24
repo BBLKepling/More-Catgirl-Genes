@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThoughtDef[not(nullifyingGenes)and *[self::defName="openDefecation" or self::defName="ToiletPrivacy"]]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/ThoughtDef[not(nullifyingGenes)and *[self::defName="openDefecation" or self::defName="ToiletPrivacy"]]</xpath>
+      <value>
+        <nullifyingGenes />
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThoughtDef[defName="openDefecation" or defName="ToiletPrivacy"]/nullifyingGenes</xpath>
+    <value>
+      <li>BBLK_WildShitter</li>
+    </value>
+  </Operation>
+
+</Patch>
