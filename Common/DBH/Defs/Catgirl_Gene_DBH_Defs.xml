@@ -35,6 +35,11 @@
     <biostatCpx>1</biostatCpx>
     <biostatMet>0</biostatMet>
     <exclusionTags />
+    <suppressedTraits>
+      <li>
+        <def MayRequire="VanillaExpanded.VanillaTraitsExpanded">VTE_IronStomach</def>
+      </li>
+    </suppressedTraits>
   </GeneDef>
 
   <JobDef>
