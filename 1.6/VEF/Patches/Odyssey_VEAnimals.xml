@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Odyssey</li>
+    </mods>
+    <match Class="PatchOperationAttributeSet">
+      <xpath>Defs/GeneDef[defName="BBLK_TigerLeather"]</xpath>
+      <attribute>Abstract</attribute>
+      <value>true</value>
+    </match>
+    <nomatch Class="PatchOperationFindMod">
+      <mods>
+        <li>Vanilla Animals Expanded</li>
+      </mods>
+      <match Class="PatchOperationReplace">
+        <xpath>Defs/GeneDef[defName="BBLK_TigerMeat"]/modExtensions/li[@Class="VEF.Genes.GeneExtension"]/customMeatThingDef</xpath>
+        <value>
+          <customMeatThingDef>Meat_AEXP_Tiger</customMeatThingDef>
+        </value>
+      </match>
+      <nomatch Class="PatchOperationAttributeSet">
+        <xpath>Defs/GeneDef[defName="BBLK_TigerLeather" or defName="BBLK_TigerMeat"]</xpath>
+        <attribute>Abstract</attribute>
+        <value>true</value>
+      </nomatch>
+    </nomatch>
+  </Operation>
+
+</Patch>
